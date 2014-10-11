@@ -15,6 +15,17 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
 
-# Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-gem 'spring',        group: :development
+group :development do
+  gem 'annotate', '~> 2.6.1'
+  gem 'quiet_assets'
+  gem 'thin'
+  gem 'capistrano-rails'
+  gem 'spring'
+end
+
+group :test do
+  gem 'rspec-rails'
+  gem 'autotest'
+  gem 'factory_girl_rails'
+end
 
