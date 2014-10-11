@@ -1,8 +1,6 @@
 class PagesController < ApplicationController
 
-  def home
-    render :text => 'home'
-  end
+  def home; ; end
 
 end
 

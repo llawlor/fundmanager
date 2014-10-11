@@ -1,0 +1,6 @@
+<a href="/users/sign_in">sign in</a>
+
+<% if current_user.present? %>
+  logged in as: <%= current_user.email %>
+<% end %>
+
