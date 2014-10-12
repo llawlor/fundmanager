@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Fundmanager</title>
+  <title>Fund Manager</title>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootswatch/3.1.1/flatly/bootstrap.min.css" />
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
-        <div class="container">
-          <% if notice.present? %>
-            <p class="flash alert alert-success"><%= notice %><span class="dismiss">X</span></p>
-          <% end %>
-          <% if alert.present? %>
-            <p class="flash alert alert-danger"><%= alert %><span class="dismiss">X</span></p>
-          <% end %>
-          <%= yield %>
-        </div>
+  <%= render 'layouts/nav' %>
+  <div class="container">
+    <% if notice.present? %>
+      <div class="flash alert alert-success"><%= notice %></div>
+    <% end %>
+    <% if alert.present? %>
+      <div class="flash alert alert-danger"><%= alert %></div>
+    <% end %>
+    <%= yield %>
+  </div>
 
 </body>
 </html>
