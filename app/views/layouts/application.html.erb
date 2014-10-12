@@ -12,16 +12,21 @@
 </head>
 <body>
 
-  <%= render 'layouts/nav' %>
-  <div class="container">
-    <% if notice.present? %>
-      <div class="flash alert alert-success"><%= notice %></div>
-    <% end %>
-    <% if alert.present? %>
-      <div class="flash alert alert-danger"><%= alert %></div>
-    <% end %>
-    <%= yield %>
+  <div id="wrap">
+    <%= render 'layouts/nav' %>
+
+    <div class="container">
+      <% if notice.present? %>
+        <div class="flash alert alert-success"><%= notice %></div>
+      <% end %>
+      <% if alert.present? %>
+        <div class="flash alert alert-danger"><%= alert %></div>
+      <% end %>
+      <%= yield %>
+    </div>
   </div>
+
+  <%= render 'layouts/footer' %>
 
 </body>
 </html>

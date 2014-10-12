@@ -1,3 +1,8 @@
 /* bootstrap overrides */
-body { padding-top: 61px; }
+html, body                { height: 100%; }
+body                      { padding-top: 61px; }
+
+/* footer styles */
+#footer                   { background-color: #eee; border-top: 1px solid #999; height: 40px; }
+#wrap                     { min-height: 100%; height: auto; margin: 0 auto -40px; padding: 0 0 40px; }
 
