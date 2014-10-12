@@ -1,10 +1,5 @@
 <div class="row">
-  <a href="/users/sign_in">sign in</a>
 
-  <% if current_user.present? %>
-    logged in as: <%= current_user.email %>
-    <%= link_to 'SignOut', destroy_user_session_path, :method => 'delete' %>
-  <% end %>
 
   <br><br><br><br><br><br><br><br><br><br><br><br>
   bottom
