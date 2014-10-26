@@ -16,12 +16,7 @@
     <%= render 'layouts/nav' %>
 
     <div class="container" style="padding-bottom: 30px;">
-      <% if notice.present? %>
-        <div class="flash alert alert-success"><%= notice %></div>
-      <% end %>
-      <% if alert.present? %>
-        <div class="flash alert alert-danger"><%= alert %></div>
-      <% end %>
+      <%= render 'layouts/flash' %>
       <%= yield %>
     </div>
   </div>
